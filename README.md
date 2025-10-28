@@ -131,6 +131,69 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
 
 ---
 
+## ⚙️ Tecnologías Utilizadas
+
+| Tecnología             | Uso                                      |
+| ---------------------- | ---------------------------------------- |
+| **Node.js**            | Entorno de ejecución del servidor        |
+| **Express.js**         | Framework para crear la API REST         |
+| **MongoDB**            | Base de datos NoSQL principal            |
+| **Mongoose**           | ODM para modelar datos y crear esquemas  |
+| **JWT (jsonwebtoken)** | Autenticación de usuarios                |
+| **bcrypt**             | Hasheo de contraseñas                    |
+| **dotenv**             | Manejo de variables de entorno           |
+| **helmet**             | Seguridad HTTP                           |
+| **cors**               | Permitir acceso entre frontend y backend |
+
+---
+
+## 🧩 Funcionalidades Adicionales
+
+- 🔄 **Populate en relaciones**  
+  Todos los modelos con `categoria` hacen uso de `populate` para obtener el nombre y tipo de categoría asociada.
+- 🧾 **Respuestas estandarizadas**  
+  Todos los controladores responden con objetos JSON claros (`message`, `data` o `error`).
+- 🧱 **Separación por capas**  
+  Facilita mantenimiento, testing y escalabilidad.
+- 🔍 **Validaciones Mongoose**  
+  Campos requeridos, tipos, y relaciones referenciadas correctamente.
+- 🧑‍💻 **Roles administrados desde tokens JWT**  
+  Permite controlar el acceso sin hacer consultas repetidas a la base.
+
+---
+
+## 🧰 Instalación y Uso
+
+1️⃣ Clonar el repositorio:
+
+```bash
+git clone https://github.com/tu-usuario/cachi_back.git
+cd cachi_back
+```
+
+2️⃣ Instalar dependencias:
+
+```bash
+npm install
+```
+
+3️⃣ Crear archivo `.env` basado en `.env.example`:
+
+```
+PORT = 3000
+MONGODB_URI = mongodb://127.0.0.1:PORT
+UTN_DB = ...
+SECRET = "..."
+```
+
+4️⃣ Iniciar el servidor:
+
+```bash
+npm run dev
+```
+
+---
+
 ## 📦 Ejemplos de Datos Mock (JSON)
 
 ### 🧍‍♂️ `User`
@@ -195,69 +258,6 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
   "tipo": "Alojamiento",
 
 }
-```
-
----
-
-## ⚙️ Tecnologías Utilizadas
-
-| Tecnología             | Uso                                      |
-| ---------------------- | ---------------------------------------- |
-| **Node.js**            | Entorno de ejecución del servidor        |
-| **Express.js**         | Framework para crear la API REST         |
-| **MongoDB**            | Base de datos NoSQL principal            |
-| **Mongoose**           | ODM para modelar datos y crear esquemas  |
-| **JWT (jsonwebtoken)** | Autenticación de usuarios                |
-| **bcrypt**             | Hasheo de contraseñas                    |
-| **dotenv**             | Manejo de variables de entorno           |
-| **helmet**             | Seguridad HTTP                           |
-| **cors**               | Permitir acceso entre frontend y backend |
-
----
-
-## 🧩 Funcionalidades Adicionales
-
-- 🔄 **Populate en relaciones**  
-  Todos los modelos con `categoria` hacen uso de `populate` para obtener el nombre y tipo de categoría asociada.
-- 🧾 **Respuestas estandarizadas**  
-  Todos los controladores responden con objetos JSON claros (`message`, `data` o `error`).
-- 🧱 **Separación por capas**  
-  Facilita mantenimiento, testing y escalabilidad.
-- 🔍 **Validaciones Mongoose**  
-  Campos requeridos, tipos, y relaciones referenciadas correctamente.
-- 🧑‍💻 **Roles administrados desde tokens JWT**  
-  Permite controlar el acceso sin hacer consultas repetidas a la base.
-
----
-
-## 🧰 Instalación y Uso
-
-1️⃣ Clonar el repositorio:
-
-```bash
-git clone https://github.com/tu-usuario/cachi_back.git
-cd cachi_back
-```
-
-2️⃣ Instalar dependencias:
-
-```bash
-npm install
-```
-
-3️⃣ Crear archivo `.env` basado en `.env.example`:
-
-```
-PORT = 3000
-MONGODB_URI = mongodb://127.0.0.1:PORT
-UTN_DB = ...
-SECRET = "..."
-```
-
-4️⃣ Iniciar el servidor:
-
-```bash
-npm run dev
 ```
 
 ---
