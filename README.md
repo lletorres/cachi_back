@@ -186,7 +186,7 @@ SECRET = "..."
 4️⃣ Iniciar el servidor:
 
 ```bash
-npm start
+npm run dev
 ```
 
 ---
