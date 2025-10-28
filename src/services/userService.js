@@ -61,6 +61,7 @@ export const validateUserService = async (email, password) => {
   const payload = {
     userId: userFound._id,
     userEmail: userFound.email,
+    rol: userFound.rol,
   };
 
   // El token debe ser firmado para tener validez

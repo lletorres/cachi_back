@@ -8,12 +8,13 @@ import {
   validate,
 } from "../controllers/userController.js";
 import { verifyTokenMiddleware } from "../middlewares/verifyTokenMiddleware.js";
+import { verifyAdmin } from "../middlewares/verfyAdmin.js";
 
 export const userRoute = express.Router();
 
-userRoute.get("/", verifyTokenMiddleware, getUsers);
-userRoute.get("/:id", getUser);
+userRoute.get("/", verifyTokenMiddleware, verifyAdmin, getUsers);
+userRoute.get("/:id", verifyTokenMiddleware, verifyAdmin, getUser);
 userRoute.post("/", createUser);
-userRoute.put("/:id", updateUser);
-userRoute.delete("/:id", deleteUser);
+userRoute.put("/:id", verifyTokenMiddleware, verifyAdmin, updateUser);
+userRoute.delete("/:id", verifyTokenMiddleware, verifyAdmin, deleteUser);
 userRoute.post("/login", validate);

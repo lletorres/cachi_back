@@ -1,6 +1,5 @@
 import { verifyToken } from "../utils/verifyToken.js";
-// Este middleware es pre controlador
-// Es previo al controlador
+// Este middleware se ejecuta previo al controlador
 
 export const verifyTokenMiddleware = (req, res, next) => {
   try {
@@ -15,7 +14,7 @@ export const verifyTokenMiddleware = (req, res, next) => {
         .json({ message: "Token de acceso no proporcionado" });
     }
 
-    // Separamos "bearer" del resto del token y tomamos solo el token
+    // se separa el "bearer" del resto del token y tomamos solo el token
     // "Bearer jdajskl89430432"
     const token = authHeader.split(" ")[1];
 
@@ -25,7 +24,8 @@ export const verifyTokenMiddleware = (req, res, next) => {
 
     console.log({ decoded });
 
-    // Guardamos en el request del usuario el token
+    // DECODED Es la información del usuario que estaba dentro del token JWT.
+    //Guardamos en el request del usuario el token
     req.user = decoded;
 
     // Si salio todo bien pasamos al proximo paso

@@ -7,6 +7,7 @@ import {
   deleteExcursion,
 } from "../controllers/excursionController.js";
 import { verifyTokenMiddleware } from "../middlewares/verifyTokenMiddleware.js";
+import { verifyAdmin } from "../middlewares/verfyAdmin.js";
 
 export const excursionRoute = express.Router();
 
@@ -14,6 +15,11 @@ export const excursionRoute = express.Router();
 
 excursionRoute.get("/", verifyTokenMiddleware, getExcursiones);
 excursionRoute.get("/:id", verifyTokenMiddleware, getExcursionById);
-excursionRoute.post("/", verifyTokenMiddleware, createExcursion);
-excursionRoute.put("/:id", verifyTokenMiddleware, updateExcursion);
-excursionRoute.delete("/:id", verifyTokenMiddleware, deleteExcursion);
+excursionRoute.post("/", verifyTokenMiddleware, verifyAdmin, createExcursion);
+excursionRoute.put("/:id", verifyTokenMiddleware, verifyAdmin, updateExcursion);
+excursionRoute.delete(
+  "/:id",
+  verifyTokenMiddleware,
+  verifyAdmin,
+  deleteExcursion
+);

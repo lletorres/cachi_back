@@ -7,12 +7,28 @@ import {
   deleteRestaurante,
 } from "../controllers/restauranteController.js";
 import { verifyTokenMiddleware } from "../middlewares/verifyTokenMiddleware.js";
+import { verifyAdmin } from "../middlewares/verfyAdmin.js";
 
 export const restauranteRoute = express.Router();
 
 // Rutas protegidas con JWT
 restauranteRoute.get("/", verifyTokenMiddleware, getRestaurantes);
 restauranteRoute.get("/:id", verifyTokenMiddleware, getRestauranteById);
-restauranteRoute.post("/", verifyTokenMiddleware, createRestaurante);
-restauranteRoute.put("/:id", verifyTokenMiddleware, updateRestaurante);
-restauranteRoute.delete("/:id", verifyTokenMiddleware, deleteRestaurante);
+restauranteRoute.post(
+  "/",
+  verifyTokenMiddleware,
+  verifyAdmin,
+  createRestaurante
+);
+restauranteRoute.put(
+  "/:id",
+  verifyTokenMiddleware,
+  verifyAdmin,
+  updateRestaurante
+);
+restauranteRoute.delete(
+  "/:id",
+  verifyTokenMiddleware,
+  verifyAdmin,
+  deleteRestaurante
+);
