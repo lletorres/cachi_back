@@ -177,9 +177,10 @@ npm install
 3️⃣ Crear archivo `.env` basado en `.env.example`:
 
 ```
-MONGO_URI=mongodb+srv://usuario:password@cluster.mongodb.net/turismo
-SECRET_JWT=tu_clave_secreta
-PORT=3001
+PORT = 3000
+MONGODB_URI = mongodb://127.0.0.1:PORT
+UTN_DB = ...
+SECRET = "..."
 ```
 
 4️⃣ Iniciar el servidor:
