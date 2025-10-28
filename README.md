@@ -142,7 +142,6 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
 | **JWT (jsonwebtoken)** | Autenticación de usuarios                |
 | **bcrypt**             | Hasheo de contraseñas                    |
 | **dotenv**             | Manejo de variables de entorno           |
-| **helmet**             | Seguridad HTTP                           |
 | **cors**               | Permitir acceso entre frontend y backend |
 
 ---
