@@ -7,8 +7,8 @@ const alojamientoSchema = new mongoose.Schema(
     direccion: { type: String, required: true },
     precioPorNoche: { type: Number, required: true },
     telefono: { type: String },
+    imagen: { type: String }, // URL de imagen
     categoria: { type: mongoose.Schema.Types.ObjectId, ref: "Categoria" },
-    imagen: { type: String }, // opcional, URL de imagen
   },
   { timestamps: true }
 );

@@ -87,8 +87,8 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
   "direccion": "string",
   "precioPorNoche": "number",
   "telefono": "string",
-  "categoria": "ObjectId -> Categoria",
-  "imagen": "string (URL)"
+  "imagen": "string (URL)",
+  "categoria": "ObjectId -> Categoria"
 }
 ```
 
@@ -114,8 +114,8 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
   "descripcion": "string",
   "duracionHoras": "number",
   "precio": "number",
-  "categoria": "ObjectId -> Categoria",
-  "imagen": "string (URL)"
+  "imagen": "string (URL)",
+  "categoria": "ObjectId -> Categoria"
 }
 ```
 
@@ -154,8 +154,8 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
   "direccion": "Ruta 33, Cachi",
   "precioPorNoche": 15000,
   "telefono": "3875123456",
-  "categoria": "ObjectIdCategoriaHotel",
-  "imagen": "https://source.unsplash.com/600x400/?hotel,cachi"
+  "imagen": "https://source.unsplash.com/600x400/?hotel,cachi",
+  "categoria": "ObjectIdCategoriaHotel"
 }
 ```
 
@@ -168,8 +168,8 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
   "direccion": "Belgrano 45, Cachi",
   "especialidad": "Gourmet",
   "telefono": "3875345678",
-  "categoria": "ObjectIdCategoriaGourmet",
-  "imagen": "https://source.unsplash.com/600x400/?restaurant,gourmet"
+  "imagen": "https://source.unsplash.com/600x400/?restaurant,gourmet",
+  "categoria": "ObjectIdCategoriaGourmet"
 }
 ```
 
@@ -181,8 +181,8 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
   "descripcion": "Excursión guiada de trekking con vistas al Nevado.",
   "duracionHoras": 6,
   "precio": 25000,
-  "categoria": "ObjectIdCategoriaTrekking",
-  "imagen": "https://source.unsplash.com/600x400/?mountain,trekking"
+  "imagen": "https://source.unsplash.com/600x400/?mountain,trekking",
+  "categoria": "ObjectIdCategoriaTrekking"
 }
 ```
 
