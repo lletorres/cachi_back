@@ -1,4 +1,4 @@
-# 🏔️ Cachi Back — API RESTful de Turismo
+# 🏔️ Cachi Backend — API RESTful de Turismo
 
 Backend desarrollado en **Node.js + Express + MongoDB + JWT**, pensado para la gestión de alojamientos, restaurantes, excursiones y categorías de un destino turístico.  
 Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acceso mediante **JSON Web Tokens**.
@@ -60,17 +60,88 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
 
 ---
 
-## 🧠 Modelos (Schemas)
+## 🧱 Esquema de la Base de Datos (MongoDB)
+
+### Colecciones principales:
+
+#### 🧍‍♂️ Usuarios (`users`)
+
+```json
+{
+  "nombre": "string",
+  "apellido": "string",
+  "email": "string",
+  "password": "string (hashed)",
+  "rol": "string ('user' | 'admin')",
+  "createdAt": "date",
+  "updatedAt": "date"
+}
+```
+
+#### 🏠 Alojamientos (`alojamientos`)
+
+```json
+{
+  "nombre": "string",
+  "descripcion": "string",
+  "direccion": "string",
+  "precioPorNoche": "number",
+  "telefono": "string",
+  "categoria": "ObjectId -> Categoria",
+  "imagen": "string (URL)"
+}
+```
+
+#### 🍽️ Restaurantes (`restaurantes`)
+
+```json
+{
+  "nombre": "string",
+  "descripcion": "string",
+  "direccion": "string",
+  "especialidad": "string",
+  "telefono": "string",
+  "imagen": "string (URL)",
+  "categoria": "ObjectId -> Categoria"
+}
+```
+
+#### 🥾 Excursiones (`excursiones`)
+
+```json
+{
+  "nombre": "string",
+  "descripcion": "string",
+  "duracionHoras": "number",
+  "precio": "number",
+  "categoria": "ObjectId -> Categoria",
+  "imagen": "string (URL)"
+}
+```
+
+#### 🏷️ Categorías (`categorias`)
+
+```json
+{
+  "nombre": "string",
+  "descripcion": "string",
+  "tipo": "string (e.g., 'Alojamiento', 'Restaurante', 'Excursión')"
+}
+```
+
+---
+
+## 📦 Ejemplos de Datos Mock (JSON)
 
 ### 🧍‍♂️ `User`
 
 ```js
 {
-  nombre: String,
-  apellido: String,
-  email: String,
-  password: String,
-  rol: { type: String, enum: ["admin", "user"], default: "user" }
+  "nombre": "Ezequiel",
+  "apellido": "Paisark",
+  "email": "ezequiel@turismo.com",
+  "password": "123456",
+  "rol": "user"
 }
 ```
 
@@ -78,13 +149,13 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
 
 ```js
 {
-  nombre: String,
-  descripcion: String,
-  direccion: String,
-  precioPorNoche: Number,
-  telefono: String,
-  categoria: { type: ObjectId, ref: "Categoria" },
-  imagen: String
+  "nombre": "Hostal del Valle",
+  "descripcion": "Cómodo alojamiento con vista al cerro.",
+  "direccion": "Ruta 33, Cachi",
+  "precioPorNoche": 15000,
+  "telefono": "3875123456",
+  "categoria": "ObjectIdCategoriaHotel",
+  "imagen": "https://source.unsplash.com/600x400/?hotel,cachi"
 }
 ```
 
@@ -92,13 +163,13 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
 
 ```js
 {
-  nombre: String,
-  descripcion: String,
-  direccion: String,
-  especialidad: String,
-  telefono: String,
-  imagen: String,
-  categoria: { type: ObjectId, ref: "Categoria" }
+  "nombre": "Doña María Gourmet",
+  "descripcion": "Restaurante con platos regionales y gourmet.",
+  "direccion": "Belgrano 45, Cachi",
+  "especialidad": "Gourmet",
+  "telefono": "3875345678",
+  "categoria": "ObjectIdCategoriaGourmet",
+  "imagen": "https://source.unsplash.com/600x400/?restaurant,gourmet"
 }
 ```
 
@@ -106,13 +177,12 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
 
 ```js
 {
-  nombre: String,
-  descripcion: String,
-  duracion: String,
-  dificultad: String,
-  precio: Number,
-  categoria: { type: ObjectId, ref: "Categoria" },
-  imagen: String
+  "nombre": "Trekking al Nevado de Cachi",
+  "descripcion": "Excursión guiada de trekking con vistas al Nevado.",
+  "duracionHoras": 6,
+  "precio": 25000,
+  "categoria": "ObjectIdCategoriaTrekking",
+  "imagen": "https://source.unsplash.com/600x400/?mountain,trekking"
 }
 ```
 
@@ -120,9 +190,10 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
 
 ```js
 {
-  nombre: String,
-  tipo: String,
-  descripcion: String
+  "nombre": "Hoteles",
+  "descripcion": "Categoría destinada a alojamientos tipo hotel o posada, con servicios completos para el turista."
+  "tipo": "Alojamiento",
+
 }
 ```
 
@@ -195,6 +266,6 @@ npm run dev
 
 **Leandro Torres**  
 Trabajo Final — Backend con MongoDB, Express y Node.js  
-2025 · Curso de Programación Backend
+2025 · Diplomatura fullstack UTN
 
 ---
