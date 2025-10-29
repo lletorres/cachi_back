@@ -1,7 +1,80 @@
 # 🏔️ Cachi Backend — API RESTful de Turismo
 
-Backend desarrollado en **Node.js + Express + MongoDB + JWT**, pensado para la gestión de alojamientos, restaurantes, excursiones y categorías de un destino turístico.  
-Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acceso mediante **JSON Web Tokens**.
+Backend desarrollado en **Node.js + Express + MongoDB + JWT**, permite administrar usuarios, alojamientos, restaurantes, excursiones y categorías.  
+Incluye autenticación JWT con roles (`admin` y `user`) para control de permisos.
+
+---
+
+## 🧰 Instalación y Uso
+
+1️⃣ Clonar el repositorio:
+
+```bash
+git clone https://github.com/tu-usuario/cachi_back.git
+cd cachi_back
+```
+
+2️⃣ Instalar dependencias:
+
+```bash
+npm install
+```
+
+3️⃣ Crear archivo `.env` basado en `.env.example`:
+
+```
+PORT = 3000
+MONGODB_URI = mongodb://127.0.0.1:PORT
+UTN_DB = ...
+SECRET = "..."
+```
+
+4️⃣ Iniciar el servidor:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Estructura del Proyecto
+
+```bash
+cachi_back/
+ ├── src/
+ │   ├── controllers/
+ │   │   ├── userController.js
+ │   │   ├── alojamientoController.js
+ │   │   ├── restauranteController.js
+ │   │   ├── excursionController.js
+ │   │   └── categoriaController.js
+ │   ├── routes/
+ │   │   ├── userRoute.js
+ │   │   ├── alojamientoRoute.js
+ │   │   ├── restauranteRoute.js
+ │   │   ├── excursionRoute.js
+ │   │   └── categoriaRoute.js
+ │   ├── models/
+ │   │   ├── userModel.js
+ │   │   ├── alojamientoModel.js
+ │   │   ├── restauranteModel.js
+ │   │   ├── excursionModel.js
+ │   │   └── categoriaModel.js
+ │   ├── middlewares/
+ │   │   └── verifyTokenMiddleware.js
+ │   ├── utils/
+ │   │   └── verifyToken.js
+ │   └── config/
+ │       └── db.js
+ ├── .env.example
+ ├── package.json
+ ├── README.md
+ └── server.js
+```
+
+> 📘 **Nota:**  
+> Esta estructura sigue una arquitectura modular, separando la lógica de negocio (controllers), las rutas de acceso (routes), los modelos de datos (models) y las herramientas de seguridad (middlewares y utils).  
+> Esta organización mejora la mantenibilidad, escalabilidad y claridad del proyecto.
 
 ---
 
@@ -26,6 +99,15 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
   - Protección de rutas según rol
 - 🧰 **Estructura modular**
   - Capas separadas en `models`, `controllers`, `services`, `routes`, `middlewares` y `utils`
+
+---
+
+## 🔐 Roles y Permisos
+
+| Rol       | Permisos                                                                           |
+| --------- | ---------------------------------------------------------------------------------- |
+| **admin** | CRUD completo sobre usuarios, alojamientos, restaurantes, excursiones y categorías |
+| **user**  | Puede registrarse, iniciar sesión y visualizar información pública                 |
 
 ---
 
@@ -158,38 +240,6 @@ Incluye autenticación de usuarios con roles (`admin` / `user`) y control de acc
   Campos requeridos, tipos, y relaciones referenciadas correctamente.
 - 🧑‍💻 **Roles administrados desde tokens JWT**  
   Permite controlar el acceso sin hacer consultas repetidas a la base.
-
----
-
-## 🧰 Instalación y Uso
-
-1️⃣ Clonar el repositorio:
-
-```bash
-git clone https://github.com/tu-usuario/cachi_back.git
-cd cachi_back
-```
-
-2️⃣ Instalar dependencias:
-
-```bash
-npm install
-```
-
-3️⃣ Crear archivo `.env` basado en `.env.example`:
-
-```
-PORT = 3000
-MONGODB_URI = mongodb://127.0.0.1:PORT
-UTN_DB = ...
-SECRET = "..."
-```
-
-4️⃣ Iniciar el servidor:
-
-```bash
-npm run dev
-```
 
 ---
 
