@@ -15,7 +15,13 @@ import { restauranteRoute } from "./src/routes/restauranteRoute.js";
 const app = express();
 
 // Middlewares
-app.use(cors({ origin: "*", methods: ["GET", "POST", "PUT", "DELETE"] }));
+app.use(
+  cors({
+    origin: "http://localhost:5173", // URL de tu frontend
+    credentials: true, // permite envío de cookies/sesiones
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

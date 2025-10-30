@@ -68,5 +68,14 @@ export const validateUserService = async (email, password) => {
   // Firma tiene: 1. payload, 2. "secret", 3. duracion
   const token = jwt.sign(payload, SECRET, { expiresIn: "1h" });
 
-  return { message: "Logged in", token };
+  return {
+    message: "Logged in",
+    token,
+    user: {
+      _id: userFound._id,
+      nombre: userFound.nombre,
+      email: userFound.email,
+      role: userFound.rol, // necesario para el frontend
+    },
+  };
 };
