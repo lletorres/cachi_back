@@ -76,7 +76,7 @@ export const validateUserService = async (email, password) => {
       nombre: userFound.nombre,
       apellido: userFound.apellido,
       email: userFound.email,
-      role: userFound.rol, // necesario para el frontend
+      rol: userFound.rol, // necesario para el frontend
     },
   };
 };
