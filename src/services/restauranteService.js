@@ -9,11 +9,15 @@ export const getRestauranteByIdService = async (id) => {
 };
 
 export const createRestauranteService = async (data) => {
-  return await Restaurante.create(data);
+  const newRestaurante = await Restaurante.create(data);
+  return await newRestaurante.populate("categoria", "nombre tipo");
 };
 
 export const updateRestauranteService = async (id, data) => {
-  return await Restaurante.findByIdAndUpdate(id, data, { new: true });
+  return await Restaurante.findByIdAndUpdate(id, data, { new: true }).populate(
+    "categoria",
+    "nombre tipo"
+  );
 };
 
 export const deleteRestauranteService = async (id) => {

@@ -9,11 +9,15 @@ export const getExcursionByIdService = async (id) => {
 };
 
 export const createExcursionService = async (data) => {
-  return await Excursion.create(data);
+  const newExcursion = await Excursion.create(data);
+  return await newExcursion.populate("categoria", "nombre tipo"); // 👈 AGREGAR
 };
 
 export const updateExcursionService = async (id, data) => {
-  return await Excursion.findByIdAndUpdate(id, data, { new: true });
+  return await Excursion.findByIdAndUpdate(id, data, { new: true }).populate(
+    "categoria",
+    "nombre tipo"
+  ); // 👈 AGREGAR
 };
 
 export const deleteExcursionService = async (id) => {

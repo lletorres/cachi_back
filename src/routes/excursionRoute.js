@@ -13,7 +13,7 @@ export const excursionRoute = express.Router();
 
 // Rutas protegidas con JWT
 
-excursionRoute.get("/", verifyTokenMiddleware, getExcursiones);
+excursionRoute.get("/", getExcursiones);
 excursionRoute.get("/:id", verifyTokenMiddleware, getExcursionById);
 excursionRoute.post("/", verifyTokenMiddleware, verifyAdmin, createExcursion);
 excursionRoute.put("/:id", verifyTokenMiddleware, verifyAdmin, updateExcursion);

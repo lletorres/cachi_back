@@ -12,7 +12,7 @@ import { verifyAdmin } from "../middlewares/verfyAdmin.js";
 export const alojamientoRoute = express.Router();
 
 // Rutas protegidas con JWT
-alojamientoRoute.get("/", verifyTokenMiddleware, getAlojamientos);
+alojamientoRoute.get("/", getAlojamientos);
 alojamientoRoute.get("/:id", verifyTokenMiddleware, getAlojamiento);
 alojamientoRoute.post(
   "/",

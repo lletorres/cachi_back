@@ -15,7 +15,7 @@ export const getCategoria = async (req, res) => {
     const categorias = await categoriaService.getAllCategorias(tipo);
     if (!categorias)
       return res.status(404).json({ message: "Categoría no encontrada" });
-    res.status(200).json(categoria);
+    res.status(200).json(categorias);
   } catch (error) {
     res.status(500).json({ message: "Error al obtener categoría", error });
   }
