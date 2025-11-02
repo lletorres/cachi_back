@@ -12,7 +12,7 @@ import { verifyAdmin } from "../middlewares/verfyAdmin.js";
 export const restauranteRoute = express.Router();
 
 // Rutas protegidas con JWT
-restauranteRoute.get("/", verifyTokenMiddleware, getRestaurantes);
+restauranteRoute.get("/", getRestaurantes);
 restauranteRoute.get("/:id", verifyTokenMiddleware, getRestauranteById);
 restauranteRoute.post(
   "/",
