@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "68fd8a85cf5a4c71008800f1"
+  },
+  "nombre": "Hotel",
+  "descripcion": "Servicio completo",
+  "tipo": "Alojamiento",
+  "createdAt": {
+    "$date": "2025-10-26T02:42:13.366Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-26T02:42:13.366Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68fd8aaecf5a4c71008800f3"
+  },
+  "nombre": "Cabaña",
+  "descripcion": "Alojamiento independiente",
+  "tipo": "Alojamiento",
+  "createdAt": {
+    "$date": "2025-10-26T02:42:54.190Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-26T02:42:54.190Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68fd8ac0cf5a4c71008800f5"
+  },
+  "nombre": "Trekking",
+  "descripcion": "Senderismo en los cerros",
+  "tipo": "Excursion",
+  "createdAt": {
+    "$date": "2025-10-26T02:43:12.563Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-26T02:43:12.563Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68fd8ad2cf5a4c71008800f7"
+  },
+  "nombre": "Cultural",
+  "descripcion": "Museos y visitas guiadas",
+  "tipo": "Excursion",
+  "createdAt": {
+    "$date": "2025-10-26T02:43:30.064Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-26T02:43:30.064Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68fd8addcf5a4c71008800f9"
+  },
+  "nombre": "Regional",
+  "descripcion": "Comida típica salteña",
+  "tipo": "Restaurante",
+  "createdAt": {
+    "$date": "2025-10-26T02:43:41.802Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-26T02:43:41.802Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68fd8aefcf5a4c71008800fb"
+  },
+  "nombre": "Gourmet",
+  "descripcion": "Cocina de autor",
+  "tipo": "Restaurante",
+  "createdAt": {
+    "$date": "2025-10-26T02:43:59.147Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-26T02:43:59.147Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,204 @@
+[{
+  "_id": {
+    "$oid": "69003b3d0f3ea85a1780fb93"
+  },
+  "nombre": "administrador",
+  "apellido": "admin",
+  "email": "admin@cachi.com",
+  "password": "$2b$10$VEuX48LYG.VSxWIwjleR2u8ikOlCGbn9jd0V2bpNEnFrqHQVwWbqi",
+  "rol": "admin",
+  "createdAt": {
+    "$date": "2025-10-28T03:40:45.762Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-28T03:40:45.762Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6900457515ae00e10e878a1e"
+  },
+  "nombre": "lucía",
+  "apellido": "gutiérrez",
+  "email": "lucia.gutierrez@turismo.com",
+  "password": "$2b$10$qL1s/i8SwcR26wFrHWrG2OCX1LI475yfyw/CHLgljfa2MLU8T4gEm",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-10-28T04:24:21.571Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-28T04:24:21.571Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6900458515ae00e10e878a20"
+  },
+  "nombre": "marcos",
+  "apellido": "fernández",
+  "email": "marcos.fernandez@turismo.com",
+  "password": "$2b$10$7NwNpxLdOQxU7/TAaYRPn.kzG8lksqLwle7hiHHyefv8RXhcxMKzy",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-10-28T04:24:37.039Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-31T05:26:27.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6900459815ae00e10e878a22"
+  },
+  "nombre": "valentina",
+  "apellido": "sosa",
+  "email": "valentina.sosa@turismo.com",
+  "password": "$2b$10$vu51D6Jn5xa.M4/UcdiJoeyBhm17qMTNXUvxa/rr74uTbw2eUniyG",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-10-28T04:24:56.715Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-28T04:24:56.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "690045aa15ae00e10e878a24"
+  },
+  "nombre": "julián",
+  "apellido": "pérez",
+  "email": "julian.perez@turismo.com",
+  "password": "$2b$10$/uvpYa9y.URnQz/gG0qvhOl0WwfUpbXeQxU2HV8f5tirMzhcRpV/S",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-10-28T04:25:14.475Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-28T04:25:14.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "690045b915ae00e10e878a26"
+  },
+  "nombre": "camila",
+  "apellido": "rodríguez",
+  "email": "camila.rodriguez@turismo.com",
+  "password": "$2b$10$bbEU5.OBoSlt8cp5quYkvOeEMyHXYb4MZ6kFGog03KC406QTtipBy",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-10-28T04:25:29.580Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-28T04:25:29.580Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "690045cb15ae00e10e878a28"
+  },
+  "nombre": "andrés",
+  "apellido": "navarro",
+  "email": "andres.navarro@turismo.com",
+  "password": "$2b$10$NF/8aiy7KIeJnK4Dc9KlfuTA/P020hZFcL8FsuWz2BKzgreoBgwDi",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-10-28T04:25:47.579Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-28T04:25:47.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "690045d915ae00e10e878a2a"
+  },
+  "nombre": "florencia",
+  "apellido": "ramos",
+  "email": "florencia.ramos@turismo.com",
+  "password": "$2b$10$Y7ApyLgZbkOQ48k5YDti6eCnFv.Z07.5uFVX0t6enhVpMbDuJ.g4q",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-10-28T04:26:01.642Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-31T05:24:01.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "690045e815ae00e10e878a2c"
+  },
+  "nombre": "tomás",
+  "apellido": "lópez",
+  "email": "tomas.lopez@turismo.com",
+  "password": "$2b$10$GmirRi3WG7KhX8CoTfIjF.7Hjmvf5QP18qBeW91Ph8o9Rx97Rsg3q",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-10-28T04:26:16.925Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-31T05:23:48.927Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "690045f515ae00e10e878a2e"
+  },
+  "nombre": "micaela",
+  "apellido": "benítez",
+  "email": "micaela.benitez@turismo.com",
+  "password": "$2b$10$OKyOqtD3BMVE435LMfWV.eNW9pDuGG4cnuAXfcdklHPWf/Lfx9RvS",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-10-28T04:26:29.611Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-28T04:26:29.611Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69067ef57f54e0b4dfbe620e"
+  },
+  "nombre": "leandro",
+  "apellido": "paisark",
+  "email": "lletorres@cachi.com",
+  "password": "$2b$10$.btS9wY2ZTayXqDqTscXru.51G3ULOFI1EHW.Of2rtcSr2XdCgI76",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-11-01T21:43:17.102Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-01T21:43:17.102Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69083ad77192854316f35da7"
+  },
+  "nombre": "user",
+  "apellido": "user",
+  "email": "user@cachi.com",
+  "password": "$2b$10$jYbyINUzgSXWxvTED1QVhuvQHz39rFc1lGAdeW/x33Dkml/eUqBKq",
+  "rol": "user",
+  "createdAt": {
+    "$date": "2025-11-03T05:17:11.762Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-03T05:17:11.762Z"
+  },
+  "__v": 0
+}]

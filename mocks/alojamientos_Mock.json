@@ -1,0 +1,102 @@
+[{
+  "_id": {
+    "$oid": "68fdd2285323497262b81bf1"
+  },
+  "nombre": "Cabañas del Río Calchaquí",
+  "descripcion": "Cabañas frente al río con parrilla y galería techada. Lugar ideal para descansar en familia.",
+  "direccion": "Ruta 33 km 5, Cachi Adentro",
+  "precioPorNoche": 22000,
+  "telefono": "+54 3875 401233",
+  "categoria": {
+    "$oid": "68fd8aaecf5a4c71008800f3"
+  },
+  "imagen": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=800&q=80",
+  "updatedAt": {
+    "$date": "2025-11-02T20:24:32.655Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fdd2285323497262b81bf2"
+  },
+  "nombre": "Cabañas El Algarrobo",
+  "descripcion": "Complejo de cabañas rústicas con pileta y vista al Nevado de Cachi.",
+  "direccion": "Camino a San José, Cachi",
+  "precioPorNoche": 25000,
+  "telefono": "+54 3875 408912",
+  "categoria": {
+    "$oid": "68fd8aaecf5a4c71008800f3"
+  },
+  "imagen": "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&q=80",
+  "updatedAt": {
+    "$date": "2025-11-02T20:24:47.489Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fdd2285323497262b81bf3"
+  },
+  "nombre": "Cabañas La Quebrada",
+  "descripcion": "Cabañas amplias de adobe con desayuno incluido y entorno natural.",
+  "direccion": "Quebrada de Escoipe s/n, Cachi",
+  "precioPorNoche": 21000,
+  "telefono": "+54 3875 405677",
+  "categoria": {
+    "$oid": "68fd8aaecf5a4c71008800f3"
+  },
+  "imagen": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+  "updatedAt": {
+    "$date": "2025-11-02T20:25:05.876Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fdd2285323497262b81bf4"
+  },
+  "nombre": "Hotel Nevado de Cachi",
+  "descripcion": "Hotel con estilo colonial y piscina climatizada. Habitaciones con vista a los cerros.",
+  "direccion": "Av. Güemes 300, Cachi",
+  "precioPorNoche": 34000,
+  "telefono": "+54 3875 409522",
+  "categoria": {
+    "$oid": "68fd8a85cf5a4c71008800f1"
+  },
+  "imagen": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+  "updatedAt": {
+    "$date": "2025-11-02T20:25:21.407Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fdd2285323497262b81bf5"
+  },
+  "nombre": "Hotel La Estancia",
+  "descripcion": "Hotel boutique con restaurante gourmet y atención personalizada.",
+  "direccion": "Belgrano 150, centro de Cachi",
+  "precioPorNoche": 38000,
+  "telefono": "+54 3875 402733",
+  "categoria": {
+    "$oid": "68fd8a85cf5a4c71008800f1"
+  },
+  "imagen": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+  "updatedAt": {
+    "$date": "2025-11-02T20:25:36.939Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fdd2285323497262b81bf6"
+  },
+  "nombre": "Hostería del Valle",
+  "descripcion": "Alojamiento clásico con jardín y desayuno regional incluido.",
+  "direccion": "Ruta 40 km 9, Cachi",
+  "precioPorNoche": 30000,
+  "telefono": "+54 3875 401022",
+  "categoria": {
+    "$oid": "68fd8a85cf5a4c71008800f1"
+  },
+  "imagen": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+  "updatedAt": {
+    "$date": "2025-11-02T20:25:52.884Z"
+  }
+}]

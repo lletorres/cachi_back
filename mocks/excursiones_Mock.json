@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "6907bbf16373fafa42c5d914"
+  },
+  "nombre": "Trekking al Nevado de Cachi",
+  "descripcion": "Ascenso guiado al imponente Nevado de Cachi (6380m). Caminata de alta montaña con vistas espectaculares de los valles calchaquíes.",
+  "duracion": "8 horas",
+  "precio": 12500,
+  "lugarSalida": "Plaza Central de Cachi",
+  "telefono": "3868-491234",
+  "imagen": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800",
+  "categoria": "68fd8ac0cf5a4c71008800f5"
+},
+{
+  "_id": {
+    "$oid": "6907bbf16373fafa42c5d915"
+  },
+  "nombre": "Circuito de Bodegas Premium",
+  "descripcion": "Recorrido por las mejores bodegas de altura de Cachi. Degustación de vinos Malbec y Torrontés de altura con maridaje de productos locales.",
+  "duracion": "6 horas",
+  "precio": 8900,
+  "lugarSalida": "Terminal de Cachi",
+  "telefono": "3868-491567",
+  "imagen": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800",
+  "categoria": "68fd8ad2cf5a4c71008800f7"
+},
+{
+  "_id": {
+    "$oid": "6907bbf16373fafa42c5d916"
+  },
+  "nombre": "Trekking Quebrada de las Flechas",
+  "descripcion": "Caminata por las formaciones rocosas más impresionantes de los Valles Calchaquíes. Ideal para fotografía de paisaje.",
+  "duracion": "5 horas",
+  "precio": 7500,
+  "lugarSalida": "Ruta 40 - Km 4633",
+  "telefono": "3868-492890",
+  "imagen": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+  "categoria": "68fd8ac0cf5a4c71008800f5"
+},
+{
+  "_id": {
+    "$oid": "6907bbf16373fafa42c5d917"
+  },
+  "nombre": "Tour de Bodegas y Cabalgata",
+  "descripcion": "Experiencia única combinando visita a bodega tradicional con cabalgata por viñedos de altura. Incluye almuerzo campestre.",
+  "duracion": "7 horas",
+  "precio": 11200,
+  "lugarSalida": "Bodega El Corazón de Cachi",
+  "telefono": "3868-493456",
+  "imagen": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800",
+  "categoria": "68fd8ad2cf5a4c71008800f7"
+},
+{
+  "_id": {
+    "$oid": "6907bbf16373fafa42c5d918"
+  },
+  "nombre": "Trekking Los Cardones al Amanecer",
+  "descripcion": "Salida antes del alba para capturar el amanecer entre cardones gigantes del Parque Nacional. Incluye desayuno andino.",
+  "duracion": "4 horas",
+  "precio": 6800,
+  "lugarSalida": "Entrada Parque Los Cardones",
+  "telefono": "3868-494123",
+  "imagen": "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800",
+  "categoria": {
+    "$oid": "68fd8ac0cf5a4c71008800f5"
+  },
+  "updatedAt": {
+    "$date": "2025-11-03T04:58:11.723Z"
+  }
+}]

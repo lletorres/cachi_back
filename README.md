@@ -245,7 +245,7 @@ cachi_back/
 
 ## 📦 Ejemplos de Datos Mock (JSON)
 
-### 🧍‍♂️ `User`
+### 🧍‍♂️ `user`
 
 ```js
 {
@@ -257,7 +257,7 @@ cachi_back/
 }
 ```
 
-### 🏨 `Alojamiento`
+### 🏨 `alojamiento`
 
 ```js
 {
@@ -271,7 +271,7 @@ cachi_back/
 }
 ```
 
-### 🍽️ `Restaurante`
+### 🍽️ `restaurante`
 
 ```js
 {
@@ -285,7 +285,7 @@ cachi_back/
 }
 ```
 
-### 🧭 `Excursion`
+### 🧭 `excursion`
 
 ```js
 {
@@ -298,7 +298,7 @@ cachi_back/
 }
 ```
 
-### 🏷️ `Categoria`
+### 🏷️ `categoria`
 
 ```js
 {
