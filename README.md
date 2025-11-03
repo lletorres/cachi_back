@@ -311,6 +311,16 @@ cachi_back/
 
 ---
 
+**Para el front se puede loguear con los siguientes usuarios para la interaccion segun el rol ADMIN/USER**
+
+mail: user@cachi.com
+contraseña: 123456
+
+mail: admin@cachi.com
+contraseña: 123456
+
+---
+
 ## 🧾 Autor
 
 **Leandro Torres**  
