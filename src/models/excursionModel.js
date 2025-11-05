@@ -7,6 +7,7 @@ const excursionSchema = new mongoose.Schema(
     duracion: { type: String, required: true },
     precio: { type: Number, required: true },
     lugarSalida: { type: String, required: true },
+    telefono: { type: String },
     imagen: { type: String },
     categoria: { type: mongoose.Schema.Types.ObjectId, ref: "Categoria" },
   },
