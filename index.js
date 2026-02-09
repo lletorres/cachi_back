@@ -24,10 +24,10 @@ app.use(
   // }),
 
   cors({
-    origin: "*", // 👈 CAMBIO CLAVE: El asterisco significa "Acepta a todo el mundo"
-    // credentials: true, // ⚠️ IMPORTANTE: Comenta o borra esta línea cuando uses "*"
+    origin: "https://cachi-front.vercel.app", // 👈 REEMPLAZA el "*" por tu URL real de Vercel
+    credentials: true, // Esto permite que pasen las credenciales (cookies/headers)
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"], // Agregamos esto para que pasen tus tokens
+    allowedHeaders: ["Content-Type", "Authorization"],
   }),
 );
 app.use(bodyParser.json());
