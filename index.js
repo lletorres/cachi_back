@@ -17,10 +17,11 @@ const app = express();
 // Middlewares
 app.use(
   cors({
-    origin: "http://localhost:5173", // URL de tu frontend
+    // origin: "http://localhost:5173", // URL de tu frontend
+    origin: "*", // 👈 CAMBIO: Pon un asterisco para permitir acceso desde cualquier lugar (Vercel, Render, etc.)
     credentials: true, // permite envío de cookies/sesiones
     methods: ["GET", "POST", "PUT", "DELETE"],
-  })
+  }),
 );
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -31,7 +32,7 @@ app.use(
     secret: SECRET,
     resave: false,
     saveUninitialized: false,
-  })
+  }),
 );
 
 // Conexión DB
