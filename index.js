@@ -16,11 +16,18 @@ const app = express();
 
 // Middlewares
 app.use(
+  // cors({
+  //   origin: "http://localhost:5173", // URL de tu frontend
+
+  //   credentials: true, // permite envío de cookies/sesiones
+  //   methods: ["GET", "POST", "PUT", "DELETE"],
+  // }),
+
   cors({
-    // origin: "http://localhost:5173", // URL de tu frontend
-    origin: "*", // 👈 CAMBIO: Pon un asterisco para permitir acceso desde cualquier lugar (Vercel, Render, etc.)
-    credentials: true, // permite envío de cookies/sesiones
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: "*", // 👈 CAMBIO CLAVE: El asterisco significa "Acepta a todo el mundo"
+    // credentials: true, // ⚠️ IMPORTANTE: Comenta o borra esta línea cuando uses "*"
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"], // Agregamos esto para que pasen tus tokens
   }),
 );
 app.use(bodyParser.json());
